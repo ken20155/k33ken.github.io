@@ -37,18 +37,90 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
-
-
+  <link rel="stylesheet" href="css/preloading.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
 </head>
 
 <body>
 
-<!-- partial -->
+<!-- Loading -->
+
+<div class="preloader">
+  <div class="preloader__container">
+        <h1 class="preloader__container__percent"></h1>
+    <div class="preloader__container__preload">
+      <div class="preloader__container__preload__dot">         </div>
+      <div class="preloader__container__preload__dot">         </div>
+      <div class="preloader__container__preload__dot">         </div>
+      <div class="preloader__container__preload__dot">         </div>
+    </div>
+  </div>
+</div>
+
 <!-- End Loading -->
 
 
+<script>
+  $(document).ready(function(){
+    
+    $("#img2").hide();
+     $("#img3").hide();
+     $("#img4").hide();
+     $("#img5").hide();
+});
 
+  $(document).ready(function(){
+    $("#goyu").click(function(){
+      $("#img1").show();
+       $("#img2").hide();
+       $("#img3").hide();
+       $("#img4").hide();
+       $("#img5").hide();
+    });
+  });
+  
+  $(document).ready(function(){
+    $("#7deadly").click(function(){
+      $("#img2").show();
+       $("#img1").hide();
+       $("#img3").hide();
+       $("#img4").hide();
+       $("#img5").hide();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#tanjiro").click(function(){
+      $("#img3").show();
+       $("#img1").hide();
+       $("#img2").hide();
+       $("#img4").hide();
+       $("#img5").hide();
+    });
+  });
+  
+   $(document).ready(function(){
+    $("#gigitsu").click(function(){
+      $("#img4").show();
+       $("#img1").hide();
+       $("#img2").hide();
+       $("#img3").hide();
+       $("#img5").hide();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#hashira").click(function(){
+      $("#img5").show();
+       $("#img1").hide();
+       $("#img2").hide();
+       $("#img3").hide();
+      
+    });
+  });
+  
+  </script>
 
 
   <!-- ======= Header ======= -->
@@ -58,15 +130,15 @@
       <h1><a href="index.html">Kenneth Tanuron</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Web Developer</span><img src="img/coffeelogo.png" style = "width: 50px;"alt=""></h2>
+      <h2>I'm a passionate <span>Web Developer</span><img src="img/rengoko.gif" style = "width: 50px;"alt=""></h2>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link active" href="#header" id = "goyu"><img src="img/goyu.gif" alt="" style = "width: 30px;" id = "img1">Home</a></li>
+          <li><a class="nav-link" href="#about" id = "7deadly"><img src="img/7deadly.gif" alt="" style = "width: 30px;" id = "img2">About</a></li>
+          <li><a class="nav-link" href="#resume" id = "tanjiro"><img src="img/tanjiro.gif" alt="" style = "width: 30px;" id = "img3">Resume</a></li>
+          <li><a class="nav-link" href="#portfolio" id = "gigitsu"><img src="img/gigitsu.gif" alt="" style = "width: 30px;" id = "img4">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact" id = "hashira"><img src="img/hashira.gif" alt="" style = "width: 30px;" id = "img5">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -91,7 +163,7 @@
 
       <div class="section-title">
         <h2>About</h2>
-        <p>Learn more about me</p>
+        <p>Learn more about me<img src="img/7deadly.gif" alt="" style = "width: 50px;" id = "img2"></p>
       </div>
 
       <div class="row">
@@ -247,7 +319,7 @@
 
       <div class="section-title">
         <h2>Resume</h2>
-        <p>Check My Resume</p>
+        <p>Check My Resume<img src="img/tanjiro.gif" alt="" style = "width: 50px;" id = "img2"></p>
       </div>
 
       <div class="row">
@@ -360,7 +432,7 @@
 
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>My Works</p>
+        <p>My Works<img src="img/gigitsu.gif" alt="" style = "width: 50px;" id = "img2"></p>
       </div>
 
       <div class="row">
@@ -378,7 +450,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="https://awesomescreenshot.s3.amazonaws.com/image/2748814/22510530-41ce4d28a029b47425f12fdc112534b1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20220218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220218T121002Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee7b6e104834c524fd3f46bce08ca168b6efd71fbb0666be015c360636a27be2" class="img-fluid" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-C6KKTPZBEKqRGuUW3PckVA8xZcT-cn5pfbb2I-CfD_x6NM_JSS8MTlm8BowH67fve3k&usqp=CAU" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Static</h4>
            
@@ -431,7 +503,7 @@
               <p>(2021)</p>
               <div class="portfolio-links">
                 <a href="https://www.youtube.com/embed/_f8_AYXUsaw" data-gallery="portfolioGallery" class="portfolio-lightbox" title="MOBILE HOME QUARANTINE PASS SYSTEM"><i class="bx bx-plus"></i></a>
-                <a href="#"><i class="bx bx-link"></i></a>
+                <a href="http://homequarantine.atwebpages.com/"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -518,7 +590,7 @@
 
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Contact Me</p>
+        <p>Contact Me<img src="img/hashira.gif" alt="" style = "width: 50px;" id = "img2"></p>
       </div>
 
       <div class="row mt-2">
@@ -593,7 +665,9 @@
   <div class="credits">
   own by <a href="">Kenneth Tanuron <img src="img/coffeelogo.png" style = "width: 30px;"alt=""></a>
   </div>
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+  
   <!-- Vendor JS Files -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/glightbox/js/glightbox.min.js"></script>
@@ -605,7 +679,8 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
-  
+  <script  src="js/script.js"></script>
+
  
 
 </body>
